@@ -28,11 +28,6 @@ h1 {
 }
 
 /* PANEL */
-.panel p{
-  width: 100%;
-  color: var(--font-color);
-  text-shadow: 0 0px 1px var(--font-color) ;
-}
 .panel {
   width: 17%;
   display: flex;
@@ -45,9 +40,20 @@ h1 {
   box-shadow:  30px 30px 40px #689eb6, -30px -30px 40px #9ceeff;
 }
 
+.panel p{
+  width: 100%;
+  color: var(--font-color);
+  text-shadow: 0 0px 1px var(--font-color) ;
+}
+
 .panel p:first-child {
   border-right: 1px solid rgb(78, 173, 197);
   padding-right: 1em;
+}
+
+.panel > p.active {
+  color: lavender;
+  font-weight: bold;
 }
 
 /* TIMER */
